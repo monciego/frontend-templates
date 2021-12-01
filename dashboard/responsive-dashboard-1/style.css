@@ -123,6 +123,15 @@ textarea {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
+.menu {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
 .notifications {
   cursor: pointer;
   padding: 0.5rem;
@@ -146,7 +155,7 @@ textarea {
   padding: 0.5rem;
 }
 
-.search-input input {
+.search-input .search {
   height: 100%;
   padding: 0.5rem 0.8rem;
   border: none;
@@ -162,6 +171,55 @@ textarea {
 
 .user h4 {
   font-weight: 600;
+}
+
+/* mobile search */
+
+.mobile-search-container {
+  position: relative;
+  padding: 0.45rem;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+.main-header .mobile-search {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  top: 2rem;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  outline: none;
+  transition: top 0.3s ease, opacity 0.1s ease;
+}
+
+.mobile-search-input,
+.main-header .mobile-search button {
+  padding: 0.5rem;
+  border: 1px solid var(--color-dark);
+  outline: none;
+}
+
+.main-header .mobile-search button {
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  background: var(--color-dark);
+  color: white;
+  height: 100%;
+  border: 1px solid var(--color-dark);
+}
+
+.main-header .mobile-search button:hover {
+  opacity: 0.8;
+}
+
+.main-header .mobile-search.active {
+  top: 3rem;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* main */
@@ -542,6 +600,18 @@ td .status {
   .main-content {
     width: 100%;
     margin-left: 0rem;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .mobile-search-container {
+    display: block;
   }
 }
 @media only screen and (max-width: 560px) {
