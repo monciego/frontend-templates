@@ -14,4 +14,4 @@
 
 ### **Modals**
 
-- ### [Basic Modal](https://github.com/monciego/frontend-templates/tree/main/modals/basic-modal)
+- ### [Basic Modal](https://github.com/monciego/frontend-templates/tree/main/modals/basic-modal) - [**See Live**](https://basic-modal.netlify.app/)
