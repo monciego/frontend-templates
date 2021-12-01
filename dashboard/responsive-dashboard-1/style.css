@@ -136,6 +136,10 @@ a {
   display: none;
 }
 
+.notifications-container {
+  position: relative;
+}
+
 .notifications {
   cursor: pointer;
   padding: 0.5rem;
@@ -144,6 +148,60 @@ a {
 
 .notifications:hover {
   background: #e2e8f0;
+}
+
+.notifications-content {
+  position: absolute;
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  right: 0;
+  padding: 0.5rem 1rem;
+  width: 23rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notification-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.notification-details {
+  margin: 0.9rem 0;
+}
+
+.notification-details:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.notification-detail {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.notification-detail p {
+  font-size: 0.9rem;
+}
+
+.notification-detail span {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notification-time {
+  font-size: 0.85rem;
+  margin-left: 2.2rem;
+  color: #777777;
+  margin-top: 0.25rem;
+}
+
+.notifications-content.active {
+  pointer-events: all;
+  opacity: 1;
 }
 
 .search-input {
@@ -646,9 +704,17 @@ td .status {
   .mobile-search-container {
     display: block;
   }
+
+  .notifications-content {
+    right: -10rem;
+  }
 }
 @media only screen and (max-width: 560px) {
   .cards {
     grid-template-columns: 100%;
+  }
+
+  .notifications-content {
+    width: 20rem;
   }
 }
