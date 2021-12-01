@@ -1,4 +1,4 @@
-# **[Dashboard1](dashboard-template1.netlify.app)**
+# **[Dashboard1](https://dashboard-template1.netlify.app/)**
 
 ### **Web View**
 
