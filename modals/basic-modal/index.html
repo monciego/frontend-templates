@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>Basic Modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="modal-btn" type="button">Basic Modal</button>
+      <div class="modal-container">
+        <header>
+          <h3>Basic Modal</h3>
+          <div class="close-modal">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z"
+                fill="#2E3A59"
+              ></path>
+            </svg>
+          </div>
+        </header>
+        <div>
+          <p class="title">Some random text...</p>
+          <p class="paragraph">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo.
+          </p>
+          <p class="paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+            repellat voluptatum optio ipsum suscipit, ad aspernatur vel cumque
+            earum impedit.
+          </p>
+          <div class="modal-cta">
+            <button type="button">Close</button>
+            <button type="button">I Understand</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>

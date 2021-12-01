@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #6366f1;
+  --light-color: #fff;
+  --secondary-light-color: #efefef;
+  --gray-color: #556275;
+  --dark-color: #0d0e0e;
+  --overlay: #b7b9bf;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal-btn {
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  background: var(--main-color);
+  color: var(--light-color);
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  z-index: 50;
+}
+
+.modal-btn:hover {
+  background: #4a4ce4;
+}
+
+.modal-btn:active {
+  transform: scale(0.95);
+}
+
+.modal-container {
+  position: fixed;
+  background-color: var(--light-color);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  width: 35%;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 60;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.modal-container.active {
+  top: 50%;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(179, 178, 178);
+  padding: 0.5rem 0;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
+.modal-container .title {
+  font-weight: 600;
+  margin: 0.8rem 0 -0.5rem 0;
+}
+
+.modal-container .paragraph {
+  margin: 1rem 0;
+  color: var(--gray-color);
+}
+
+.modal-container .modal-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.modal-container .modal-cta button {
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.modal-container .modal-cta button:first-child {
+  border: 0.5px solid #ccc;
+  background: var(--secondary-light-color);
+}
+
+.modal-container .modal-cta button:first-child:hover {
+  border: 0.5px solid #b6b2b2;
+}
+
+.modal-container .modal-cta button:last-child {
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+.modal-container .modal-cta button:last-child:hover {
+  background: #4a4ce4;
+}
+
+@media all and (max-width: 1028px) {
+  .modal-container {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .modal-container {
+    width: 85%;
+  }
+}
+
+#overlay.active {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  transition: 0.3s ease;
+}
