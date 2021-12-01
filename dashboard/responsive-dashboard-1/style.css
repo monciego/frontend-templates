@@ -29,6 +29,10 @@ textarea {
   font-family: inherit;
 }
 
+a {
+  color: inherit;
+}
+
 /* sidebar */
 
 .sidebar {
@@ -162,17 +166,46 @@ textarea {
   outline: none;
 }
 
-.user {
+.user-dropdown {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  position: relative;
 }
 
 .user h4 {
   font-weight: 600;
 }
 
+.user-dropdown-content {
+  position: absolute;
+  bottom: -5rem;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.user-dropdown-content.active {
+  bottom: -7rem;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.user-dropdown-content > a {
+  margin: 0.5rem 0;
+  padding: 0.25rem 1rem;
+  display: block;
+}
+
+.user-dropdown-content > a:hover {
+  background: rgb(223, 223, 223);
+}
 /* mobile search */
 
 .mobile-search-container {
