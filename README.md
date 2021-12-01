@@ -11,3 +11,7 @@
 ### **Headers**
 
 - ### [Responsive Header with Dropdown 1](https://github.com/monciego/frontend-templates/tree/main/headers/responsive-header-dropdown-1) - [**See Live**](https://header-template-1.netlify.app/)
+
+### **Modals**
+
+- ### [Basic Modal](https://github.com/monciego/frontend-templates/tree/main/modals/basic-modal)
