@@ -313,6 +313,8 @@ a {
   pointer-events: auto;
 }
 
+/* mobile menu nav codes can be found after media queries */
+
 /* main */
 
 main {
@@ -717,4 +719,43 @@ td .status {
   .notifications-content {
     width: 20rem;
   }
+}
+
+/* mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 18rem;
+  z-index: 450;
+  background-color: #fff;
+  padding: 0 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile-menu header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu ul li {
+  margin: 1rem 0;
+}
+
+.mobile-menu ul li a {
+  font-weight: 600;
+}
+
+.close-menu {
+  cursor: pointer;
 }

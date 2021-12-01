@@ -1,3 +1,16 @@
+// mobile menu
+const menuBtn = document.querySelector(".menu");
+const closeBtn = document.querySelector(".close-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
+
 // mobile search
 const searchBtn = document.querySelector(".search-icon");
 const mobileSearchInput = document.querySelector(".mobile-search");
