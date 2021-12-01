@@ -1,0 +1,700 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script defer src="./app.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.6411 22.024C13.4806 22.0201 12.5416 21.0785 12.5411 19.918V17.811H14.6411C15.8048 17.811 16.7481 18.7543 16.7481 19.918C16.7481 21.0816 15.8048 22.025 14.6411 22.025V22.024ZM9.3591 22.024C8.19856 22.0201 7.25964 21.0785 7.2591 19.918V14.644C7.2591 13.8925 7.66002 13.1981 8.31085 12.8223C8.96167 12.4465 9.76352 12.4465 10.4143 12.8223C11.0652 13.1981 11.4661 13.8925 11.4661 14.644V19.918C11.4655 21.0813 10.5224 22.024 9.3591 22.024ZM19.9091 16.751H14.6411C13.4777 16.751 12.5346 15.8079 12.5346 14.6445C12.5346 13.4811 13.4777 12.538 14.6411 12.538H19.9091C21.0725 12.538 22.0156 13.4811 22.0156 14.6445C22.0156 15.8079 21.0725 16.751 19.9091 16.751ZM4.0921 16.751C2.92871 16.751 1.9856 15.8079 1.9856 14.6445C1.9856 13.4811 2.92871 12.538 4.0921 12.538H6.1921V14.644C6.1921 15.8069 5.24998 16.7499 4.0871 16.751H4.0921ZM19.9091 11.462H17.8091V9.35598C17.8124 8.19697 18.7541 7.25978 19.9131 7.26198C21.0721 7.26419 22.0102 8.20496 22.0091 9.36398C22.008 10.523 21.0681 11.462 19.9091 11.462ZM14.6411 11.462C13.4806 11.4581 12.5416 10.5165 12.5411 9.35598V4.08198C12.5411 3.33047 12.942 2.63605 13.5928 2.2603C14.2437 1.88454 15.0455 1.88454 15.6963 2.2603C16.3472 2.63605 16.7481 3.33047 16.7481 4.08198V9.35598C16.7475 10.5193 15.8044 11.462 14.6411 11.462ZM9.3591 11.462H4.0921C2.92871 11.462 1.9856 10.5189 1.9856 9.35548C1.9856 8.19209 2.92871 7.24898 4.0921 7.24898H9.3591C10.5225 7.24898 11.4656 8.19209 11.4656 9.35548C11.4656 10.5189 10.5225 11.462 9.3591 11.462ZM11.4591 6.18899H9.3591C8.50685 6.19141 7.73715 5.67995 7.40923 4.89331C7.08131 4.10667 7.25982 3.19994 7.86145 2.5963C8.46308 1.99267 9.36922 1.81114 10.1569 2.13644C10.9447 2.46174 11.4587 3.22973 11.4591 4.08198V6.18798V6.18899Z"
+            fill="#2E3A59"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="sidebar-links">
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v4zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v7zm1-10h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1z"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 3C6.23858 3 4 5.23858 4 8C4 10.7614 6.23858 13 9 13C11.7614 13 14 10.7614 14 8C14 5.23858 11.7614 3 9 3ZM6 8C6 6.34315 7.34315 5 9 5C10.6569 5 12 6.34315 12 8C12 9.65685 10.6569 11 9 11C7.34315 11 6 9.65685 6 8Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M16.9084 8.21828C16.6271 8.07484 16.3158 8.00006 16 8.00006V6.00006C16.6316 6.00006 17.2542 6.14956 17.8169 6.43645C17.8789 6.46805 17.9399 6.50121 18 6.5359C18.4854 6.81614 18.9072 7.19569 19.2373 7.65055C19.6083 8.16172 19.8529 8.75347 19.9512 9.37737C20.0496 10.0013 19.9987 10.6396 19.8029 11.2401C19.6071 11.8405 19.2719 12.3861 18.8247 12.8321C18.3775 13.2782 17.8311 13.6119 17.2301 13.8062C16.6953 13.979 16.1308 14.037 15.5735 13.9772C15.5046 13.9698 15.4357 13.9606 15.367 13.9496C14.7438 13.8497 14.1531 13.6038 13.6431 13.2319L13.6421 13.2311L14.821 11.6156C15.0761 11.8017 15.3717 11.9248 15.6835 11.9747C15.9953 12.0247 16.3145 12.0001 16.615 11.903C16.9155 11.8059 17.1887 11.639 17.4123 11.416C17.6359 11.193 17.8035 10.9202 17.9014 10.62C17.9993 10.3198 18.0247 10.0006 17.9756 9.68869C17.9264 9.37675 17.8041 9.08089 17.6186 8.82531C17.4331 8.56974 17.1898 8.36172 16.9084 8.21828Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M19.9981 21C19.9981 20.475 19.8947 19.9551 19.6938 19.47C19.4928 18.9849 19.1983 18.5442 18.8271 18.1729C18.4558 17.8017 18.0151 17.5072 17.53 17.3062C17.0449 17.1053 16.525 17.0019 16 17.0019V15C16.6821 15 17.3584 15.1163 18 15.3431C18.0996 15.3783 18.1983 15.4162 18.2961 15.4567C19.0241 15.7583 19.6855 16.2002 20.2426 16.7574C20.7998 17.3145 21.2417 17.9759 21.5433 18.7039C21.5838 18.8017 21.6217 18.9004 21.6569 19C21.8837 19.6416 22 20.3179 22 21H19.9981Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M16 21H14C14 18.2386 11.7614 16 9 16C6.23858 16 4 18.2386 4 21H2C2 17.134 5.13401 14 9 14C12.866 14 16 17.134 16 21Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2C17.1046 2 18 2.89543 18 4L4 4L4 15.1765C2.89543 15.1765 2 14.281 2 13.1765V4C2 2.89543 2.89543 2 4 2H16Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M14 22L11.3333 19.1765H8C6.89543 19.1765 6 18.281 6 17.1765V8C6 6.89543 6.89543 6 8 6H20C21.1046 6 22 6.89543 22 8V17.1765C22 18.281 21.1046 19.1765 20 19.1765H16.6667L14 22ZM15.8046 17.1765L20 17.1765V8L8 8V17.1765H12.1954L14 19.0872L15.8046 17.1765Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.0511 21.949C6.72623 21.9444 2.3389 17.7679 2.07231 12.4497C1.80572 7.13142 5.75338 2.53708 11.0511 2V6.04C8.04176 6.54858 5.89505 9.23721 6.06528 12.2845C6.23551 15.3318 8.66832 17.7646 11.7156 17.9349C14.7629 18.1051 17.4516 15.9584 17.9601 12.949H22.0001C21.4799 18.0555 17.1831 21.9421 12.0501 21.949H12.0511ZM22.0011 10.949H17.9611C17.5356 8.4347 15.5655 6.46506 13.0511 6.04V2C17.7782 2.48398 21.5156 6.22098 22.0001 10.948L22.0011 10.949Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 18H20C21.1046 18 22 17.1046 22 16V4C22 2.89543 21.1046 2 20 2H8C6.89543 2 6 2.89543 6 4V16C6 17.1046 6.89543 18 8 18ZM8 16V4H20V16H8Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M2 8H4V20H16V22H4C2.89543 22 2 21.1046 2 20V8Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M10 14H19L15.25 8.55556L13 11.6667L12.25 10.8889L10 14Z"
+                  fill="#2E3A59"
+                ></path>
+                <path
+                  d="M10.75 8.16667C10.75 8.811 11.2537 9.33333 11.875 9.33333C12.4963 9.33333 13 8.811 13 8.16667C13 7.52233 12.4963 7 11.875 7C11.2537 7 10.75 7.52233 10.75 8.16667Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4H7V2H9V4H15V2H17V4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM13 18H7V12H13V18Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22C7.664 22 4 19.965 4 17.556V6.444C4 4.035 7.664 2 12 2C16.336 2 20 4.035 20 6.444V17.556C20 19.965 16.337 22 12 22ZM6 14.9V17.559C6.07 18.112 8.309 19.781 12 19.781C15.691 19.781 17.931 18.107 18 17.553V14.9C16.1794 15.9554 14.1039 16.4905 12 16.447C9.89606 16.4906 7.82058 15.9554 6 14.9ZM6 9.341V12C6.07 12.553 8.309 14.222 12 14.222C15.691 14.222 17.931 12.548 18 11.994V9.341C16.1795 10.3968 14.104 10.9323 12 10.889C9.89596 10.9323 7.82046 10.3968 6 9.341ZM12 4.222C8.308 4.222 6.069 5.896 6 6.451C6.07 7 8.311 8.666 12 8.666C15.689 8.666 17.931 6.992 18 6.438C17.93 5.887 15.689 4.222 12 4.222Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end of sidebar -->
+
+    <!-- your contents and header goes here... -->
+    <div class="main-content">
+      <!-- header -->
+      <header class="main-header">
+        <div class="notifications">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="#E2E8F0"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 22C10.8954 22 10 21.1046 10 20H14C14 21.1046 13.1046 22 12 22ZM20 19H4V17L6 16V10.5C5.94732 9.0891 6.26594 7.68911 6.924 6.43998C7.57904 5.2815 8.6987 4.45886 10 4.17998V1.99998H13.646C12.3464 3.45242 12.1295 5.57638 13.1087 7.26153C14.0879 8.94667 16.0406 9.80992 17.946 9.39998C17.981 9.75698 17.998 10.127 17.998 10.5V16L19.998 17V19H20ZM17 7.99998C15.4097 7.99752 14.0977 6.75453 14.0093 5.16671C13.9209 3.57888 15.0869 2.19797 16.6671 2.01904C18.2473 1.8401 19.6926 2.92533 19.9615 4.49271C20.2304 6.0601 19.2295 7.56499 17.68 7.92298C17.457 7.97421 17.2288 8.00004 17 7.99998Z"
+              fill="#2E3A59"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="search-input">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1)"
+            >
+              <path
+                d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
+              ></path>
+            </svg>
+          </span>
+
+          <input type="search" placeholder="Search" />
+        </div>
+
+        <div class="user">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"
+            ></path>
+          </svg>
+          <h4>Jericho</h4>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z"
+              fill="#2E3A59"
+            ></path>
+          </svg>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <!-- your main content goes here.... -->
+      <main>
+        <h2 class="main-title">Dashboard</h2>
+
+        <div class="cards">
+          <div class="card-single">
+            <div class="card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 20H4C2.93052 20.032 2.03642 19.1933 2 18.124V5.875C2.03641 4.80581 2.93068 3.96743 4 4H20C21.0693 3.96743 21.9636 4.80581 22 5.875V18.125C21.963 19.1939 21.0691 20.032 20 20ZM4 6V17.989L20 18V6.011L4 6ZM13.43 16H6C6.07353 15.1721 6.46534 14.4049 7.093 13.86C7.79183 13.1667 8.73081 12.7692 9.715 12.75C10.6992 12.7692 11.6382 13.1667 12.337 13.86C12.9645 14.4051 13.3563 15.1721 13.43 16ZM18 15H15V13H18V15ZM9.715 12C9.17907 12.0186 8.65947 11.8139 8.28029 11.4347C7.9011 11.0555 7.69638 10.5359 7.715 10C7.69668 9.46416 7.9015 8.94474 8.28062 8.56562C8.65974 8.1865 9.17916 7.98168 9.715 8C10.2508 7.98168 10.7703 8.1865 11.1494 8.56562C11.5285 8.94474 11.7333 9.46416 11.715 10C11.7336 10.5359 11.5289 11.0555 11.1497 11.4347C10.7705 11.8139 10.2509 12.0186 9.715 12ZM18 11H14V9H18V11Z"
+                  fill="#2E3A59"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <h2>812</h2>
+              <span>Users</span>
+            </div>
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="outer"></div>
+              <div class="number">48%</div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress" id="users"></div>
+                </div>
+                <div class="bar right-users">
+                  <div class="progress" id="users"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <div class="card-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 20.0001H3C2.73459 20.0027 2.47935 19.898 2.29233 19.7097C2.10531 19.5214 2.0024 19.2654 2.007 19H2V5C2 3.89543 2.89543 3 4 3H10C10.2234 3.00021 10.4402 3.0752 10.616 3.213L12.9 5H18C19.1046 5 20 5.89543 20 7V11H21C21.3361 11 21.6498 11.169 21.8348 11.4496C22.0198 11.7302 22.0514 12.0851 21.919 12.394L18.919 19.394C18.7614 19.7616 18.4 20.0001 18 20.0001ZM6.66 13L4.517 18H17.341L19.484 13H6.66ZM4 7V14.13L5.081 11.606C5.23858 11.2384 5.60004 11 6 11H18V7H4Z"
+                    fill="#2E3A59"
+                  ></path>
+                </svg>
+              </div>
+              <h2>451</h2>
+              <span>Projects</span>
+            </div>
+            <div>
+              <div class="circular">
+                <div class="inner"></div>
+                <div class="outer"></div>
+                <div class="number">34%</div>
+                <div class="circle">
+                  <div class="bar left">
+                    <div class="progress" id="projects"></div>
+                  </div>
+                  <div class="bar right-projects">
+                    <div class="progress" id="projects"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <div class="card-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4H7V2H9V4H15V2H17V4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22ZM5 10V20H19V10H5ZM5 6V8H19V6H5ZM9.8 19H8V17.2L12.2 13.01L14 14.81L9.8 19ZM14.625 14.182L12.825 12.382L14.2 11.013L16 12.813L14.63 14.183L14.625 14.182Z"
+                    fill="#2E3A59"
+                  ></path>
+                </svg>
+              </div>
+              <h2>28</h2>
+              <span>Tasks</span>
+            </div>
+            <div>
+              <div class="circular">
+                <div class="inner"></div>
+                <div class="outer"></div>
+                <div class="number">20%</div>
+                <div class="circle">
+                  <div class="bar left">
+                    <div class="progress" id="tasks"></div>
+                  </div>
+                  <div class="bar right-tasks">
+                    <div class="progress" id="tasks"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <div class="card-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21H4C3.44772 21 3 20.5523 3 20V3H5V19H21V21ZM19.627 16L15.457 11.918L13.229 14.1C12.8467 14.4715 12.2383 14.4715 11.856 14.1L7 9.344L8.373 8L12.543 12.082L14.77 9.9C15.1523 9.52848 15.7607 9.52848 16.143 9.9L21 14.656L19.627 16Z"
+                    fill="#2E3A59"
+                  ></path>
+                </svg>
+              </div>
+              <h2>1,051</h2>
+              <span>Visits</span>
+            </div>
+            <div>
+              <div class="circular">
+                <div class="inner"></div>
+                <div class="outer"></div>
+                <div class="number">90%</div>
+                <div class="circle">
+                  <div class="bar left">
+                    <div class="progress" id="visits"></div>
+                  </div>
+                  <div class="bar right-visits">
+                    <div class="progress" id="visits"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- projects table -->
+
+        <div class="grid">
+          <div class="projects">
+            <div class="card-content">
+              <header class="card-header">
+                <h2>Projects</h2>
+                <button>View all</button>
+              </header>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <td>Project Title</td>
+                        <td>Developers</td>
+                        <td>Department</td>
+                        <td>Status</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Scholarship System</td>
+                        <td>
+                          <div class="developers">
+                            <img
+                              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                          </div>
+                        </td>
+                        <td>Full-Stack</td>
+                        <td>
+                          <span class="status green"></span>
+                          In Progress
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Coderig Landing Page</td>
+                        <td>
+                          <div class="developers">
+                            <img
+                              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                          </div>
+                        </td>
+                        <td>Frontend</td>
+                        <td>
+                          <span class="status yellow"></span>
+                          Review
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Loop Studios Landing Page</td>
+                        <td>
+                          <div class="developers">
+                            <img
+                              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                          </div>
+                        </td>
+                        <td>Frontend</td>
+                        <td>
+                          <span class="status red"></span>
+                          Pending
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Blog app</td>
+                        <td>
+                          <div class="developers">
+                            <img
+                              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                          </div>
+                        </td>
+                        <td>Full-Stack</td>
+                        <td>
+                          <span class="status yellow"></span>
+                          Review
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Video Chat</td>
+                        <td>
+                          <div class="developers">
+                            <img
+                              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                            <img
+                              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              alt="developer image"
+                            />
+                          </div>
+                        </td>
+                        <td>Full-Stack</td>
+                        <td>
+                          <span class="status green"></span>
+                          In Progress
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity">
+            <div class="card-content">
+              <div class="card-header">
+                <h2>Recent Activity</h2>
+              </div>
+              <div class="card-body activity-body">
+                <p class="noun">Today</p>
+                <div class="activity-details">
+                  <div class="activity-detail">
+                    <div class="activity-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="18"
+                        width="18"
+                        viewBox="0 0 20 20"
+                        fill="#fff"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <p><span>Harry</span> updated config.js</p>
+                  </div>
+                  <div class="view-more">
+                    <a href="#0">View </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18"
+                      width="18"
+                      viewBox="0 0 20 20"
+                      fill="#2a20bd"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="activity-details">
+                  <div class="activity-detail">
+                    <div class="activity-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="18"
+                        width="18"
+                        fill="#fff"
+                        viewBox="0 0 24 24"
+                        stroke="#fff"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                        />
+                      </svg>
+                    </div>
+                    <p><span>Jericho</span> published a new project.</p>
+                  </div>
+                  <div class="view-more">
+                    <a href="#0">View </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18"
+                      width="18"
+                      viewBox="0 0 20 20"
+                      fill="#2a20bd"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p class="noun">Yesterday</p>
+                <div class="activity-details">
+                  <div class="activity-detail">
+                    <div class="activity-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="18"
+                        width="18"
+                        fill="#fff"
+                        viewBox="0 0 24 24"
+                        stroke="#fff"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                        />
+                      </svg>
+                    </div>
+                    <p>
+                      <span> 18+ </span>developers have contributed to second
+                      project.
+                    </p>
+                  </div>
+                  <div class="view-more">
+                    <a href="#0">View </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="18"
+                      width="18"
+                      viewBox="0 0 20 20"
+                      fill="#2a20bd"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<!-- for more templates, visit: https://github.com/monciego/frontend-templates -->
