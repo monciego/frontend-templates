@@ -1,3 +1,15 @@
+# **[Dashboard1](dashboard-template1.netlify.app)**
+
+### **Web View**
+
+![](https://i.ibb.co/HzgBsnM/smartmockups-kwnfhk4j.jpg)
+
+### **Mobile View**
+
+![](https://i.ibb.co/9WLfZVT/smartmockups-kwnflxll.jpg)
+
+---
+
 ## **RESOURCES**
 
 ---
