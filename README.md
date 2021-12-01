@@ -6,4 +6,4 @@
 
 ### **Dashboards**
 
-- ### [Responsive Dashboard 1](https://github.com/monciego/frontend-templates/tree/main/dashboard/responsive-dashboard-1) - [**See Live**](dashboard-template1.netlify.app)
+- ### [Responsive Dashboard 1](https://github.com/monciego/frontend-templates/tree/main/dashboard/responsive-dashboard-1) - [**See Live**](https://dashboard-template1.netlify.app/)
