@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #fff;
+  --warning: #f59e0b;
+  --success: #10b981;
+  --danger: #f43f5e;
+  --info: #6366f1;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 1.5rem;
+}
+
+.alert {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+
+  margin: 0.8rem 0;
+}
+
+.alert span {
+  padding: 0 0.5rem;
+}
+
+.close {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.warning {
+  background-color: var(--warning);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.success {
+  background-color: var(--success);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.danger {
+  background-color: var(--danger);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.info {
+  background-color: var(--info);
+  color: var(--text);
+  font-weight: 500;
+}
