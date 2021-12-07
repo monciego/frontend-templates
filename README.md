@@ -18,4 +18,4 @@
 
 ### **Alerts**
 
-- ### [Alerts 1](https://github.com/monciego/frontend-templates/tree/main/alerts/alerts1)
+- ### [Alerts 1](https://github.com/monciego/frontend-templates/tree/main/alerts/alerts1) - [**See Live**](https://alerts-template.netlify.app/)
