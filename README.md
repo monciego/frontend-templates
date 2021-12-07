@@ -15,3 +15,7 @@
 ### **Modals**
 
 - ### [Basic Modal](https://github.com/monciego/frontend-templates/tree/main/modals/basic-modal) - [**See Live**](https://basic-modal.netlify.app/)
+
+### **Alerts**
+
+- ### [Alerts 1](https://github.com/monciego/frontend-templates/tree/main/alerts/alerts1)
